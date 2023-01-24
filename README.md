@@ -61,7 +61,7 @@
 <img src="https://github.com/Vishaka-Randunuge/Clothing-Website-Daisy_War/blob/master/Daisy_War/img-web-daisy/admin-add-item.jpg" alt="Alt text" title="Optional title">
 
 <h4>Add Item</h4>
-<img src="https://github.com/Vishaka-Randunuge/Clothing-Website-Daisy_War/blob/master/Daisy_War/img-web-daisy/admin-add.jpg" alt="Alt text" title="Optional title">
+<img src="https://github.com/Vishaka-Randunuge/Clothing-Website-Daisy_War/blob/master/Daisy_War/img-web-daisy/admin-adds.jpg" alt="Alt text" title="Optional title">
 
 <h4>View Items</h4>
 <img src="https://github.com/Vishaka-Randunuge/Clothing-Website-Daisy_War/blob/master/Daisy_War/img-web-daisy/admin-view-item.jpg" alt="Alt text" title="Optional title">
