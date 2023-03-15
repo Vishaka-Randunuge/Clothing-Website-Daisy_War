@@ -106,4 +106,6 @@ This website has been designed in parts using media queries in the CSS files and
     2. Linux = /opt/lampp/htdocs
 - Open your Xampp control panel and start apache and MySQL models
 - Open in browser the index.html file through VScode 
+
+- Use the sql.gz file to easily add the database to phpmyadmin 
  
