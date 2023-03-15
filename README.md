@@ -5,7 +5,7 @@
 <h4>Web Application</h4>
 
 <h5>Home page</h5>
-<img src="https://github.com/Vishaka-Randunuge/Clothing-Website-Daisy_War/blob/master/Daisy_War/img-web-daisy/home.jpg" alt="Alt text" title="Optional title" width="1304" height="3150" />
+<img src="https://github.com/Vishaka-Randunuge/Clothing-Website-Daisy_War/blob/master/Daisy_War/img-web-daisy/home.png" alt="Alt text" title="Optional title"  />
 
 <h5>Login</h5>
 <img src="https://github.com/Vishaka-Randunuge/Clothing-Website-Daisy_War/blob/master/Daisy_War/img-web-daisy/register.jpg" alt="Alt text" title="Optional title">
@@ -39,8 +39,8 @@
 <img src="https://github.com/Vishaka-Randunuge/Clothing-Website-Daisy_War/blob/master/Daisy_War/img-web-daisy/mobile-home.jpg" alt="Alt text" title="Optional title">
 
 
-<h6>Mobile Home</h6>
-<img src="https://github.com/Vishaka-Randunuge/Clothing-Website-Daisy_War/blob/master/Daisy_War/img-web-daisy/mobile-menu.jpg" alt="Alt text" title="Optional title">
+<h6>Mobile Menu</h6>
+<img src="https://github.com/Vishaka-Randunuge/Clothing-Website-Daisy_War/blob/master/Daisy_War/img-web-daisy/mobile-menu.png" alt="Alt text" title="Optional title">
 
 
 <h6>Mobile Item</h6>
