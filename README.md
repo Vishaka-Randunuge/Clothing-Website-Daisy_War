@@ -1,33 +1,31 @@
-# Clothing-Website-Daisy_War
+<h2 align="center">Clothing Website</h2>
+<h4 align="center">modern clothing website application written in HTML,PHP,CSS,HTML and Javascript</h4>
+<h4>Installation</h4>
 
-<h1 align="center">Clothing Website</h1>
-<h3 align="center">modern clothing website application written in HTML,PHP,CSS,HTML and Javascript</h3>
-<h2>Installation</h2>
+<h4>Web Application</h4>
 
-<h2>Web Application</h2>
-
-<h3>Home page</h3>
+<h5>Home page</h5>
 <img src="https://github.com/Vishaka-Randunuge/Clothing-Website-Daisy_War/blob/master/Daisy_War/img-web-daisy/home.jpg" alt="Alt text" title="Optional title">
 
-<h3>Login</h3>
+<h5>Login</h5>
 <img src="https://github.com/Vishaka-Randunuge/Clothing-Website-Daisy_War/blob/master/Daisy_War/img-web-daisy/register.jpg" alt="Alt text" title="Optional title">
 
-<h3>Menu</h3>
+<h5>Menu</h5>
 <img src="https://github.com/Vishaka-Randunuge/Clothing-Website-Daisy_War/blob/master/Daisy_War/img-web-daisy/menu.jpg" alt="Alt text" title="Optional title">
 
-<h3>Single Item Page</h3>
+<h5>Single Page</h5>
 <img src="https://github.com/Vishaka-Randunuge/Clothing-Website-Daisy_War/blob/master/Daisy_War/img-web-daisy/single-page.jpg" alt="Alt text" title="Optional title">
 
-<h3>Single Item Page</h3>
+<h5>SingleItem Page</h5
 <img src="https://github.com/Vishaka-Randunuge/Clothing-Website-Daisy_War/blob/master/Daisy_War/img-web-daisy/single-page.jpg" alt="Alt text" title="Optional title">
 
-<h3>Cart Page</h3>
+<h5>Cart Page</h5>
 <img src="https://github.com/Vishaka-Randunuge/Clothing-Website-Daisy_War/blob/master/Daisy_War/img-web-daisy/cart.jpg" alt="Alt text" title="Optional title">
 
-<h3>About Us</h3>
+<h5>Abut Us</h5>
 <img src="https://github.com/Vishaka-Randunuge/Clothing-Website-Daisy_War/blob/master/Daisy_War/img-web-daisy/about-us.jpg" alt="Alt text" title="Optional title">
 
-<h3>Terms & Condidions</h3>
+<h5>Terms & Condidions</h5>
 <img src="https://github.com/Vishaka-Randunuge/Clothing-Website-Daisy_War/blob/master/Daisy_War/img-web-daisy/T&C.jpg" alt="Alt text" title="Optional title">
 
 
@@ -35,35 +33,35 @@
 
 
 
-<h3>Mobile View</h3>
+<h5>Mobile View</h5>
 
-<h4>Mobile Home</h4>
+<h6>Mobile Home</h6>
 <img src="https://github.com/Vishaka-Randunuge/Clothing-Website-Daisy_War/blob/master/Daisy_War/img-web-daisy/mobile-home.jpg" alt="Alt text" title="Optional title">
 
 
-<h4>Mobile Home</h4>
+<h6>Mobile Home</h6>
 <img src="https://github.com/Vishaka-Randunuge/Clothing-Website-Daisy_War/blob/master/Daisy_War/img-web-daisy/mobile-menu.jpg" alt="Alt text" title="Optional title">
 
 
-<h4>Mobile Item</h4>
+<h6>Mobile Item</h6>
 <img src="https://github.com/Vishaka-Randunuge/Clothing-Website-Daisy_War/blob/master/Daisy_War/img-web-daisy/mobile-item.jpg" alt="Alt text" title="Optional title">
 
 
-<h4>Mobile Cart</h4>
+<h6>Mobile Cart</h6>
 <img src="https://github.com/Vishaka-Randunuge/Clothing-Website-Daisy_War/blob/master/Daisy_War/img-web-daisy/mobile-cart.jpg" alt="Alt text" title="Optional title">
 
 
 
 
-<h3>Administrator</h3>
+<h5>Administrator</h5>
 
-<h4>Admin Panel</h4>
+<h6>Admin Panel</h6>
 <img src="https://github.com/Vishaka-Randunuge/Clothing-Website-Daisy_War/blob/master/Daisy_War/img-web-daisy/admin-add-item.jpg" alt="Alt text" title="Optional title">
 
-<h4>Add Item</h4>
+<h6>Add Item</h6>
 <img src="https://github.com/Vishaka-Randunuge/Clothing-Website-Daisy_War/blob/master/Daisy_War/img-web-daisy/admin-adds.jpg" alt="Alt text" title="Optional title">
 
-<h4>View Items</h4>
+<h6>View Items</h6>
 <img src="https://github.com/Vishaka-Randunuge/Clothing-Website-Daisy_War/blob/master/Daisy_War/img-web-daisy/admin-view-item.jpg" alt="Alt text" title="Optional title">
 
 
