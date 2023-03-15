@@ -1,0 +1,257 @@
+-- phpMyAdmin SQL Dump
+-- version 5.1.3
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Sep 18, 2022 at 10:17 PM
+-- Server version: 10.4.24-MariaDB
+-- PHP Version: 8.1.5
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `daisywar`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `account_info1`
+--
+
+CREATE TABLE `account_info1` (
+  `id` int(11) NOT NULL,
+  `Username` varchar(100) NOT NULL,
+  `Email` varchar(50) NOT NULL,
+  `Password` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `account_info1`
+--
+
+INSERT INTO `account_info1` (`id`, `Username`, `Email`, `Password`) VALUES
+(1, 'Jinx', 'jinx@gmail.com', 'Powder1'),
+(2, 'DaisyAdmin', 'admindaisy@gmail.com', 'daisyadmin1234'),
+(3, 'newuser', 'user@gmail.com', 'newuser');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `products`
+--
+
+CREATE TABLE `products` (
+  `id` int(11) NOT NULL,
+  `name` varchar(200) NOT NULL,
+  `desc` text NOT NULL,
+  `price` decimal(7,2) NOT NULL,
+  `rrp` decimal(7,2) NOT NULL DEFAULT 0.00,
+  `quantity` int(11) NOT NULL,
+  `img` text NOT NULL,
+  `date_added` datetime NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `products`
+--
+
+INSERT INTO `products` (`id`, `name`, `desc`, `price`, `rrp`, `quantity`, `img`, `date_added`) VALUES
+(6, 'Kids Line Dress', '', '2000.00', '0.00', 100, 'Kdress1,1.png', '2022-09-01 08:11:13'),
+(7, 'Kids Line Dress', '', '2000.00', '0.00', 100, 'Kdress1,2.png', '2022-09-01 08:11:13'),
+(8, 'Kids Ruffle Dress', '', '2300.00', '0.00', 100, 'Kdress2,1.png', '2022-09-01 08:11:13'),
+(9, 'Kids Ruffle Dress', '', '2300.00', '0.00', 100, 'Kdress2,2.png', '2022-09-01 08:11:13'),
+(10, 'Kids Silk Dress', '', '2500.00', '0.00', 100, 'Kdress3,1.png', '2022-09-01 08:11:13'),
+(11, 'Kids Silk Dress', '', '2500.00', '0.00', 100, 'Kdress3,2.png', '2022-09-01 08:11:13'),
+(12, 'Kids Bow-Sleeve Dress', '', '2900.00', '0.00', 100, 'Kdress4,1.png', '2022-09-01 08:11:13'),
+(13, 'Kids Bow-Sleeve Dress', '', '2900.00', '0.00', 100, 'Kdress4,2.png', '2022-09-01 08:11:13'),
+(14, 'Kids Trousers', '', '2500.00', '0.00', 100, 'Kjeans1,1.png', '2022-09-01 08:11:13'),
+(15, 'Kids Trousers', '', '2500.00', '0.00', 100, 'Kjeans1,2.png', '2022-09-01 08:11:13'),
+(16, 'Kids Leggings', '', '1900.00', '0.00', 100, 'Kjeans2,1.png', '2022-09-01 08:11:13'),
+(17, 'Kids Leggings', '', '1900.00', '0.00', 100, 'Kjeans2,2.png', '2022-09-01 08:11:13'),
+(18, 'Kids Pants', '', '2400.00', '0.00', 100, 'Kjeans3,1.png', '2022-09-01 08:11:13'),
+(19, 'Kids Pants', '', '2400.00', '0.00', 100, 'Kjeans3,2.png', '2022-09-01 08:11:13'),
+(20, 'Kids Jeans', '', '2700.00', '0.00', 100, 'Kjeans4,1.png', '2022-09-01 08:11:13'),
+(21, 'Kids Jeans', '', '2700.00', '0.00', 100, 'Kjeans4,2.png', '2022-09-01 08:11:13'),
+(22, 'Kids Unicorn T-shirt', '', '2000.00', '0.00', 100, 'Kshirt1,1.png', '2022-09-01 08:11:13'),
+(23, 'Kids Unicorn T-shirt', '', '2000.00', '0.00', 100, 'Kshirt1,2.png', '2022-09-01 08:11:13'),
+(24, 'Kids Printed T-shirt', '', '1900.00', '0.00', 100, 'Kshirt2,1.png', '2022-09-01 08:11:13'),
+(25, 'Kids Printed T-shirt', '', '1900.00', '0.00', 100, 'Kshirt2,2.png', '2022-09-01 08:11:13'),
+(26, 'Kids Dinasaur T-shirt', '', '2400.00', '0.00', 100, 'Kshirt3,1.png', '2022-09-01 08:11:13'),
+(27, 'Kids Dinosaur T-shirt', '', '2400.00', '0.00', 100, 'Kshirt3,2.png', '2022-09-01 08:11:13'),
+(28, 'Kids Tank-top', '', '2300.00', '0.00', 100, 'Kshirt4,1.png', '2022-09-01 08:11:13'),
+(29, 'Kids Tank-top', '', '2300.00', '0.00', 100, 'Kshirt4,2.png', '2022-09-01 08:11:13'),
+(30, 'Kids Boys Sandle', '', '1500.00', '0.00', 100, 'Ksandle1,1.png', '2022-09-01 08:11:13'),
+(31, 'Kids Boys Sandle', '', '1500.00', '0.00', 100, 'Ksandle1,2.png', '2022-09-01 08:11:13'),
+(32, 'Kids Girls Sandal', '', '1600.00', '0.00', 100, 'Ksandle2,1.png', '2022-09-01 08:11:13'),
+(33, 'Kids Girls Sandal', '', '1600.00', '0.00', 100, 'Ksandle2,2.png', '2022-09-01 08:11:13'),
+(34, 'Kids Black Shoes', '', '2000.00', '0.00', 100, 'Kshoes1,1.png', '2022-09-01 08:11:13'),
+(35, 'Kids Black Shoes', '', '2000.00', '0.00', 100, 'Kshoes1,2.png', '2022-09-01 08:11:13'),
+(36, 'Kids White Shoes', '', '2000.00', '0.00', 100, 'Kshoes2,1.png', '2022-09-01 08:11:13'),
+(37, 'Kids White Shoes', '', '2000.00', '0.00', 100, 'Kshoes2,2.png', '2022-09-01 08:11:13'),
+(38, 'Kids Color Sneakers', '', '2200.00', '0.00', 100, 'Ksneak1,1.png', '2022-09-01 08:11:13'),
+(39, 'Kids Color Sneakers', '', '2200.00', '0.00', 100, 'Ksneak1,2.png', '2022-09-01 08:11:13'),
+(40, 'Kids Sport Sneakers', '', '2200.00', '0.00', 100, 'Ksneak2,1.png', '2022-09-01 08:11:13'),
+(41, 'Kids Sport Sneakers', '', '2200.00', '0.00', 100, 'Ksneak2,2.png', '2022-09-01 08:11:13'),
+(42, 'Kids Flex Sneakers', '', '2100.00', '0.00', 100, 'Ksneak3,1.png', '2022-09-01 08:11:13'),
+(43, 'Kids Flex Sneakers', '', '2100.00', '0.00', 100, 'Ksneak3,2.jpg', '2022-09-01 08:11:13'),
+(44, 'Kids Coat Shoes', '', '1600.00', '0.00', 100, 'Kcoat1,1.png', '2022-09-01 08:11:13'),
+(45, 'Kids Coat Shoes', '', '1600.00', '0.00', 100, 'Kcoat1,2.png', '2022-09-01 08:11:13'),
+(46, 'A-line Dress', '', '5500.00', '0.00', 100, 'Wdress1,1.png', '2022-09-01 08:11:13'),
+(47, 'A-line Dress', '', '5500.00', '0.00', 100, 'Wdress1,2.png', '2022-09-01 08:11:13'),
+(48, 'Summer Dress', '', '5100.00', '0.00', 100, 'Wdress2,1.png', '2022-09-01 08:11:13'),
+(49, 'Summer Dress', '', '5100.00', '0.00', 100, 'Wdress2,2.png', '2022-09-01 08:11:13'),
+(50, 'Bow-Tie Dress', '', '5300.00', '0.00', 100, 'Wdress3,1.png', '2022-09-01 08:11:13'),
+(51, 'Bow-Tie Dress', '', '5300.00', '0.00', 100, 'Wdress3,2.png', '2022-09-01 08:11:13'),
+(52, 'Polka-dot Dress', '', '5000.00', '0.00', 100, 'Wdress4,1.png', '2022-09-01 08:11:13'),
+(53, 'Polka-dot Dress', '', '5000.00', '0.00', 100, 'Wdress4,2.png', '2022-09-01 08:11:13'),
+(54, 'High Waisted Jeans', '', '4000.00', '0.00', 100, 'Wjean1,1.png', '2022-09-01 08:11:13'),
+(55, 'High Waisted Jeans', '', '4000.00', '0.00', 100, 'Wjean1,2.png', '2022-09-01 08:11:13'),
+(56, 'Tied Jeans', '', '3700.00', '0.00', 100, 'Wjean2,1.png', '2022-09-01 08:11:13'),
+(57, 'Tied Jeans', '', '3700.00', '0.00', 100, 'Wjean2,2.png', '2022-09-01 08:11:13'),
+(58, 'Color Jeans', '', '4000.00', '0.00', 100, 'Wjean3,1.png', '2022-09-01 08:11:13'),
+(59, 'Color Jeans', '', '4000.00', '0.00', 100, 'Wjean3,2.png', '2022-09-01 08:11:13'),
+(60, 'Office Pants', '', '4000.00', '0.00', 100, 'Wjean4,1.png', '2022-09-01 08:11:13'),
+(61, 'Office Pants', '', '4000.00', '0.00', 100, 'Wjean4,2.png', '2022-09-01 08:11:13'),
+(62, 'Tie Front T-shirt', '', '3500.00', '0.00', 100, 'Wtshirt1,1.png', '2022-09-01 08:11:13'),
+(63, 'Tie Front T-shirt', '', '3500.00', '0.00', 100, 'Wtshirt1,2.png', '2022-09-01 08:11:13'),
+(64, 'Flowers T-shirt', '', '3200.00', '0.00', 100, 'Wtshirt2,1.png', '2022-09-01 08:11:13'),
+(65, 'Flowers T-shirt', '', '3200.00', '0.00', 100, 'Wtshirt2,2.png', '2022-09-01 08:11:13'),
+(66, 'Printed T-shirt', '', '3100.00', '0.00', 100, 'Wtshirt3,1.png', '2022-09-01 08:11:13'),
+(67, 'Printed T-shirt', '', '3100.00', '0.00', 100, 'Wtshirt3,2.png', '2022-09-01 08:11:13'),
+(68, 'Tie Front-long T-shirt', '', '3600.00', '0.00', 100, 'Wtshirt4,1.png', '2022-09-01 08:11:13'),
+(69, 'Tie Front-long T-shirt', '', '3600.00', '0.00', 100, 'Wtshirt4,2.png', '2022-09-01 08:11:13'),
+(70, 'Frill Top', '', '3400.00', '0.00', 100, 'Wtop1,1.jpg', '2022-09-01 08:11:13'),
+(71, 'Frill Top', '', '3400.00', '0.00', 100, 'Wtop1,2.png', '2022-09-01 08:11:13'),
+(72, 'Button Top', '', '3400.00', '0.00', 100, 'Wtop2,1.png', '2022-09-01 08:11:13'),
+(73, 'Button Top', '', '3400.00', '0.00', 100, 'Wtop2,2.png', '2022-09-01 08:11:13'),
+(74, 'Line Top', '', '3000.00', '0.00', 100, 'Wtop3,1.png', '2022-09-01 08:11:13'),
+(75, 'Line Top', '', '3000.00', '0.00', 100, 'Wtop3,2.png', '2022-09-01 08:11:13'),
+(76, 'Jersy', '', '3500.00', '0.00', 100, 'Wtop4,1.png', '2022-09-01 08:11:13'),
+(77, 'Jersy', '', '3500.00', '0.00', 100, 'Wtop4,2.png', '2022-09-01 08:11:13'),
+(78, 'Womens Running Shoes', '', '3800.00', '0.00', 100, 'Wshoes1,1.png', '2022-09-01 08:11:13'),
+(79, 'Womens Running Shoes', '', '3800.00', '0.00', 100, 'Wshoes1,2.png', '2022-09-01 08:11:13'),
+(80, 'Womens Printed Shoes', '', '4000.00', '0.00', 100, 'Wshoes2,1.jpg', '2022-09-01 08:11:13'),
+(81, 'Womens Printed Shoes', '', '4000.00', '0.00', 100, 'Wshoes2,2.jpg', '2022-09-01 08:11:13'),
+(82, 'Womens Fit Shoes', '', '4600.00', '0.00', 100, 'Wshoes3,1.png', '2022-09-01 08:11:13'),
+(83, 'Womens Fit Shoes', '', '4600.00', '0.00', 100, 'Wshoes3,2.png', '2022-09-01 08:11:13'),
+(84, 'Womens Sock Shoes', '', '3900.00', '0.00', 100, 'Wshoes4,1.png', '2022-09-01 08:11:13'),
+(85, 'Womens Sock Shoes', '', '3900.00', '0.00', 100, 'Wshoes4,2.png', '2022-09-01 08:11:13'),
+(86, 'Womens Pattern Sandal', '', '4200.00', '0.00', 100, 'Wsandle1,1.png', '2022-09-01 08:11:13'),
+(87, 'Womens Pattern Sandal', '', '4200.00', '0.00', 100, 'Wsandle1,2.png', '2022-09-01 08:11:13'),
+(88, 'Womens Triangle Sandal', '', '4200.00', '0.00', 100, 'Wsandle2,1.png', '2022-09-01 08:11:13'),
+(89, 'Womens Triangle Sandal', '', '4200.00', '0.00', 100, 'Wsandle2,2.png', '2022-09-01 08:11:13'),
+(90, 'Womens Casual Sandal', '', '4000.00', '0.00', 100, 'Wsandle3,1.png', '2022-09-01 08:11:13'),
+(91, 'Womens Casual Sandal', '', '4000.00', '0.00', 100, 'Wsandle3,2.png', '2022-09-01 08:11:13'),
+(92, 'Womens Gem Sandal', '', '4500.00', '0.00', 100, 'Wsandle4,1.png', '2022-09-01 08:11:13'),
+(93, 'Womens Gem Sandal', '', '4500.00', '0.00', 100, 'Wsandle4,2.png', '2022-09-01 08:11:13'),
+(94, 'Womens Leather Heel', '', '4000.00', '0.00', 100, 'Wheel1,1.png', '2022-09-01 08:11:13'),
+(95, 'Womens Leather Heel', '', '4000.00', '0.00', 100, 'Wheel1,2.png', '2022-09-01 08:11:13'),
+(96, 'Womens Wedge Heel', '', '3800.00', '0.00', 100, 'Wheel2,1.png', '2022-09-01 08:11:13'),
+(97, 'Womens Wedge Heel', '', '3800.00', '0.00', 100, 'Wheel2,2.png', '2022-09-01 08:11:13'),
+(98, 'Womens Classic Heel', '', '4300.00', '0.00', 100, 'Wheel3,1.png', '2022-09-01 08:11:13'),
+(99, 'Womens Classic Heel', '', '4300.00', '0.00', 100, 'Wheel3,2.png', '2022-09-01 08:11:13'),
+(100, 'Womens Flower Heel', '', '4500.00', '0.00', 100, 'Wheel4,1.png', '2022-09-01 08:11:13'),
+(101, 'Womens Flower Heel', '', '4500.00', '0.00', 100, 'Wheel4,2.png', '2022-09-01 08:11:13'),
+(102, 'Mens Overshirt', '', '3000.00', '0.00', 100, 'Mshirt1,1.png', '2022-09-01 08:11:13'),
+(103, 'Mens Overshirt', '', '3000.00', '0.00', 100, 'Mshirt1,2.png', '2022-09-01 08:11:13'),
+(104, 'Mens Button-Up', '', '3000.00', '0.00', 100, 'Mshirt2,1.png', '2022-09-01 08:11:13'),
+(105, 'Mens Button-Up', '', '3000.00', '0.00', 100, 'Mshirt2,2.png', '2022-09-01 08:11:13'),
+(106, 'Mens Long-Sleeve Shirt', '', '3200.00', '0.00', 100, 'Mshirt3,1.png', '2022-09-01 08:11:13'),
+(107, 'Mens Long-Sleeve Shirt', '', '3200.00', '0.00', 100, 'Mshirt3,2.png', '2022-09-01 08:11:13'),
+(108, 'Mens Casual Shirt', '', '2900.00', '0.00', 100, 'Mshirt4,1.png', '2022-09-01 08:11:13'),
+(109, 'Mens Casual Shirt', '', '2900.00', '0.00', 100, 'Mshirt4,2.png', '2022-09-01 08:11:13'),
+(110, 'Mens Straight Jeans', '', '4500.00', '0.00', 100, 'Mjeans1,1.png', '2022-09-01 08:11:13'),
+(111, 'Mens Straight Jeans', '', '4500.00', '0.00', 100, 'Mjeans1,2.png', '2022-09-01 08:11:13'),
+(112, 'Mens Trousers', '', '4000.00', '0.00', 100, 'Mjeans2,1.png', '2022-09-01 08:11:13'),
+(113, 'Mens Trousers', '', '4000.00', '0.00', 100, 'Mjeans2,2.png', '2022-09-01 08:11:13'),
+(114, 'Mens Drawstring Pants', '', '2900.00', '0.00', 100, 'Mjeans3,1.png', '2022-09-01 08:11:13'),
+(115, 'Mens Drawstring Pants', '', '2900.00', '0.00', 100, 'Mjeans3,2.png', '2022-09-01 08:11:13'),
+(116, 'Mens Denim Jeans', '', '4800.00', '0.00', 100, 'Mjeans4,1.png', '2022-09-01 08:11:13'),
+(117, 'Mens Denim Jeans', '', '4800.00', '0.00', 100, 'Mjeans4,2.png', '2022-09-01 08:11:13'),
+(118, 'Mens Sports T-shirt', '', '3000.00', '0.00', 100, 'Mtshirt1,1.png', '2022-09-01 08:11:13'),
+(119, 'Mens Sports T-shirt', '', '3000.00', '0.00', 100, 'Mtshirt1,2.png', '2022-09-01 08:11:13'),
+(120, 'Mens Plain T-shirt', '', '3200.00', '0.00', 100, 'Mtshirt2,1.png', '2022-09-01 08:11:13'),
+(121, 'Mens Plain T-shirt', '', '3200.00', '0.00', 100, 'Mtshirt2,2.png', '2022-09-01 08:11:13'),
+(122, 'Mens Beer T-shirt', '', '3400.00', '0.00', 100, 'Mtshirt3,1.png', '2022-09-01 08:11:13'),
+(123, 'Mens Beer T-shirt', '', '3400.00', '0.00', 100, 'Mtshirt3,2.png', '2022-09-01 08:11:13'),
+(124, 'Mens Smiley T-shirt', '', '3500.00', '0.00', 100, 'Mtshirt4,1.png', '2022-09-01 08:11:13'),
+(125, 'Mens Smiley T-shirt', '', '3500.00', '0.00', 100, 'Mtshirt4,2.png', '2022-09-01 08:11:13'),
+(126, 'Mens Full Suit', '', '6000.00', '0.00', 100, 'Msuit1,1.png', '2022-09-01 08:11:13'),
+(127, 'Mens Full Suit', '', '6000.00', '0.00', 100, 'Msuit1,2.png', '2022-09-01 08:11:13'),
+(128, 'Mens Vest Suit', '', '6300.00', '0.00', 100, 'Msuit2,1.png', '2022-09-01 08:11:13'),
+(129, 'Mens Vest Suit', '', '6300.00', '0.00', 100, 'Msuit2,2.png', '2022-09-01 08:11:13'),
+(130, 'Mens Blazer Suit', '', '6000.00', '0.00', 100, 'Msuit3,1.png', '2022-09-01 08:11:13'),
+(131, 'Mens Blazer Suit', '', '6000.00', '0.00', 100, 'Msuit3,2.png', '2022-09-01 08:11:13'),
+(132, 'Mens Casual Suit', '', '5700.00', '0.00', 100, 'Msuit4,1.png', '2022-09-01 08:11:13'),
+(133, 'Mens Casual Suit', '', '5700.00', '0.00', 100, 'Msuit4,2.png', '2022-09-01 08:11:13'),
+(134, 'Mens Sport Shoes', '', '5200.00', '0.00', 100, 'Mshoes1,1.png', '2022-09-01 08:11:13'),
+(135, 'Mens Sport Shoes', '', '5200.00', '0.00', 100, 'Mshoes1,2.png', '2022-09-01 08:11:13'),
+(136, 'Mens Casual Shoes', '', '5000.00', '0.00', 100, 'Mshoes2,1.png', '2022-09-01 08:11:13'),
+(137, 'Mens Casual Shoes', '', '5000.00', '0.00', 100, 'Mshoes2,2.png', '2022-09-01 08:11:13'),
+(138, 'Mens Everday Shoes', '', '4800.00', '0.00', 100, 'Mshoes3,1.png', '2022-09-01 08:11:13'),
+(139, 'Mens Everday Shoes', '', '4800.00', '0.00', 100, 'Mshoes3,2.png', '2022-09-01 08:11:13'),
+(140, 'Mens Chunky Shoes', '', '5100.00', '0.00', 100, 'Mshoes4,1.png', '2022-09-01 08:11:13'),
+(141, 'Mens Chunky Shoes', '', '5100.00', '0.00', 100, 'Mshoes4,2.jpg', '2022-09-01 08:11:13'),
+(142, 'Mens Fold Boots', '', '5200.00', '0.00', 100, 'Mboot1,1.png', '2022-09-01 08:11:13'),
+(143, 'Mens Fold Boots', '', '5200.00', '0.00', 100, 'Mboot1,2.png', '2022-09-01 08:11:13'),
+(144, 'Mens Foam Boots', '', '5000.00', '0.00', 100, 'Mboot2,1.png', '2022-09-01 08:11:13'),
+(145, 'Mens Foam Boots', '', '5000.00', '0.00', 100, 'Mboot2,2.png', '2022-09-01 08:11:13'),
+(146, 'Mens Chunky Boots', '', '4800.00', '0.00', 100, 'Mboot3,1.png', '2022-09-01 08:11:13'),
+(147, 'Mens Chunky Boots', '', '4800.00', '0.00', 100, 'Mboot3,2.png', '2022-09-01 08:11:13'),
+(148, 'Mens Sock Boots', '', '5100.00', '0.00', 100, 'Mboot4,1.png', '2022-09-01 08:11:13'),
+(149, 'Mens Sock Boots', '', '5100.00', '0.00', 100, 'Mboot4,2.png', '2022-09-01 08:11:13'),
+(150, 'Mens Leather Dress Shoes', '', '5200.00', '0.00', 100, 'Mdshoes1,1.png', '2022-09-01 08:11:13'),
+(151, 'Mens Leather Dress Shoes', '', '5200.00', '0.00', 100, 'Mdshoes1,2.png', '2022-09-01 08:11:13'),
+(152, 'Mens Cloth Dress Shoes', '', '5000.00', '0.00', 100, 'Mdshoes2,1.png', '2022-09-01 08:11:13'),
+(153, 'Mens Cloth Dress Shoes', '', '5000.00', '0.00', 100, 'Mdshoes2,2.png', '2022-09-01 08:11:13'),
+(154, 'Mens Dark Dress Shoes', '', '4800.00', '0.00', 100, 'Mdshoes3,1.png', '2022-09-01 08:11:13'),
+(155, 'Mens Dark Dress Shoes', '', '4800.00', '0.00', 100, 'Mdshoes3,2.png', '2022-09-01 08:11:13'),
+(156, 'Mens Slip Dress Shoes', '', '5100.00', '0.00', 100, 'Mdshoes4,1.png', '2022-09-01 08:11:13'),
+(157, 'Mens Slip Dress Shoes', '', '5100.00', '0.00', 100, 'Mdshoes4,2.png', '2022-09-01 08:11:13'),
+(158, 'Kids Line Dress', '', '2000.00', '0.00', 100, 'Kdress1,3.png', '2022-09-02 04:37:16');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `account_info1`
+--
+ALTER TABLE `account_info1`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `products`
+--
+ALTER TABLE `products`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `account_info1`
+--
+ALTER TABLE `account_info1`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT for table `products`
+--
+ALTER TABLE `products`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=159;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
