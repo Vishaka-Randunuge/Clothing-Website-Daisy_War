@@ -5,7 +5,7 @@
 <h4>Web Application</h4>
 
 <h5>Home page</h5>
-<img src="https://github.com/Vishaka-Randunuge/Clothing-Website-Daisy_War/blob/master/Daisy_War/img-web-daisy/home.jpg" alt="Alt text" title="Optional title">
+<img src="https://github.com/Vishaka-Randunuge/Clothing-Website-Daisy_War/blob/master/Daisy_War/img-web-daisy/home.jpg" =250x250 alt="Alt text" title="Optional title">
 
 <h5>Login</h5>
 <img src="https://github.com/Vishaka-Randunuge/Clothing-Website-Daisy_War/blob/master/Daisy_War/img-web-daisy/register.jpg" alt="Alt text" title="Optional title">
