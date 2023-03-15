@@ -98,4 +98,12 @@ This website has been designed in parts using media queries in the CSS files and
 <h6>View Items</h6>
 <img src="https://github.com/Vishaka-Randunuge/Clothing-Website-Daisy_War/blob/master/Daisy_War/img-web-daisy/admin-view-item.jpg" style="width: 500px; max-width: 100%; height: auto" alt="Alt text" title="Optional title">
 
-
+# How to run this project ?
+- First download the *XAMPP* server and start it.
+- Now download this project,unzip it and save it in htdocs folder.
+- Location of htdocs :-  
+    1. Windows = c:/xampp/htdocs
+    2. Linux = /opt/lampp/htdocs
+- Open your Xampp control panel and start apache and MySQL models
+- Open in browser the index.html file through VScode 
+ 
